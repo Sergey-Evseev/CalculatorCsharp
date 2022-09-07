@@ -53,7 +53,7 @@ namespace Lesson11SimpleCode
                         else Console.WriteLine("Частное чисел = " + (firstValue / secondValue));
                         break;
                     default:
-                        Console.WriteLine("nНеизвестное действие");
+                        Console.WriteLine("\nНеизвестное действие");
                         break;
                 }
                 Console.WriteLine("Нажмите enter для продолжения или введите exit для завершения программы");
