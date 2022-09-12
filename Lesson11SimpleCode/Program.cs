@@ -17,6 +17,7 @@ namespace LessonsSimpleCode
             }
             Console.WriteLine("Some changes for revert operation");
             Console.WriteLine("Some changes for local commit");
+            Console.WriteLine("Some changes for 3rd commit");
         }            
     }
 }
