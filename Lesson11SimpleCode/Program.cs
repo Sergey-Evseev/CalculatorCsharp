@@ -15,6 +15,7 @@ namespace LessonsSimpleCode
                     Console.WriteLine("\tЦикл 2 итерация №: " + j);
                 }
             }
-        }        
+            Console.WriteLine("Some changes for revert operation");
+        }            
     }
 }
