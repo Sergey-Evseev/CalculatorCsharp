@@ -15,8 +15,8 @@ namespace LessonsSimpleCode
             {
                Console.WriteLine(); //каждую строку начинаем с начала
                 
-                for (int j = 0; j < i; j++)
-                { //в 1-й строке печатаем 1 звездочку, в последней i звездочек
+                for (int j = height; j > i; j--)
+                { //в 1-й строке макс. значение равное высоте, далее уменьшаем
                     Console.Write("* ");
                 }                
             }
