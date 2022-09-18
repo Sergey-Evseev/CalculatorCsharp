@@ -9,15 +9,21 @@ namespace LessonsSimpleCode
         {
             Console.WriteLine("Введите высоту треугольника");
             int height = int.Parse(Console.ReadLine());                     
-
+            //введенный параметр опеределяет количество строк
 
             for (int i = 0; i <= height; i++) //перебор по строкам
             {
                Console.WriteLine(); //каждую строку начинаем с начала
-                
-                for (int j = height; j > i; j--)
-                { //в 1-й строке макс. значение равное высоте, далее уменьшаем
-                    Console.Write("* ");
+
+                for (int k = height; k > i; k--)
+                //в первом цикле ставим макс. кол-во пробелов, 
+                { //в последующих уменьшаем
+                    Console.Write(" ");
+                }
+                                
+                for (int j = 0; j < i; j++)
+                {  //в первой строке 1 звездочка, в последней i
+                    Console.Write("*");
                 }                
             }
             Console.WriteLine();
@@ -25,8 +31,3 @@ namespace LessonsSimpleCode
     }
 }
 
-//for (int k = width; k > i; k--)
-
-//{
-//    Console.Write(" ");
-//}
