@@ -15,15 +15,14 @@ namespace LessonsSimpleCode
             {
                Console.WriteLine(); //каждую строку начинаем с начала
                                
-                for (int k = 0; k < i; k++)
-                //в первом цикле ставим 0 пробелов, 
-                { //в последующих увеличиваем
+                for (int k = height; k > i; k--)
+                { 
                     Console.Write(" ");
                 }
 
-                for (int j = height; j > i; j--)
-                { //в 1-й строке макс. значение равное высоте, далее уменьшаем
-                    Console.Write("*");
+                for (int j = 0; j < i; j++)
+                { 
+                    Console.Write("* ");
                 }
 
             }
