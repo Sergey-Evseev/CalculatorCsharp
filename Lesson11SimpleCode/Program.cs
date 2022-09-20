@@ -2,30 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace LessonsSimpleCode
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int [] myArray = new int[5]; // выделение памяти сразу с момент обявления массива
+            
+            Console.WriteLine("Введите длину массива: ");
+            int size = int.Parse(Console.ReadLine());
 
-            int [] myArray1 = new int[5] {1, 2, 10, 15, 6 }; // инициализация в момент объявления и выделения памяти
+            int [] myArray = new int[size];
 
-            int[] myArray2 = new int[] { 100, 3, 27, 600 }; // выделение памяти в момент инициализации
+            Console.WriteLine("Введите значения элементов массива");
 
-            int[] myArray3 = { 100, 3, 27, 600 }; // выделение памяти в момент инициализации
-                        
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine();
 
-            int[] myArray4 = Enumerable.Repeat(5, 10).ToArray();
-            //Repeat<TResult>(TResult, Int32)	
-            // Генерирует последовательность, содержащую одно повторяющееся значение.
-
-            int[] myArray5 = Enumerable.Range(98, 15).ToArray();
-
-
-            foreach (var i in myArray5)
+            Console.WriteLine("Вы ввели массив:");
+            foreach (var i in myArray)
             {
                 Console.Write("{0} ", i);
             }
